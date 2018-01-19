@@ -9,5 +9,11 @@
 @desc: 主要实现类
 """
 
+import random
+import os
+
+import jieba
+import jieba.analyse
+
 if __name__ == '__main__':
     pass
