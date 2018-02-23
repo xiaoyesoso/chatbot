@@ -5,3 +5,14 @@
 @desc: RNN模型层
 @time: 2018/02/23 
 """
+
+import logging
+import time
+import numpy as np
+import tensorflow as tf
+
+logging.getLogger('tensorflow').setLevel(logging.WARNING)
+
+class CharRNNLM(object):
+    def __init__(self):
+        pass
