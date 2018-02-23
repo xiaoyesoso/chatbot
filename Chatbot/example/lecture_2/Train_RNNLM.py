@@ -38,7 +38,12 @@ class BatchGenerator(object):
 
     def create_batches(self):
         self.num_batches = int(self.tensor_in.size / (self.batch_size * self.seq_length))
-        self.tensor_in
+        self.tensor_in = self.tensor_in[:self.num_batches * self.batch_size * self.seq_length]
+        self.tensor_out = self.tensor_out[:self.num_batches * self.batch_size * self.seq_length]
+
+        #当数据量太小时，抛出一个异常
+        if self.num_batches == 0:
+            assert False, "Not enough data, Make seq_length and batch_size small."
         pass
 
     def reset_batch_pointer(self):
