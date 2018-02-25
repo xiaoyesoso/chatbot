@@ -14,5 +14,6 @@ import tensorflow as tf
 logging.getLogger('tensorflow').setLevel(logging.WARNING)
 
 class CharRNNLM(object):
-    def __init__(self):
+    def __init__(self, is_training, batch_size, num_rollings):
+
         pass
