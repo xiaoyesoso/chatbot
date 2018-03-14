@@ -19,6 +19,7 @@ from Ranker import Ranker
 
 '''
   处理超参数，读入数据，调用Ranker
+  参数选择，模型保存
 '''
 class Rankbot:
     """
